@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &mdash; Kingpin Labs</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="../" class="logo">Kingpin Labs</a>
+    <nav>
+      <a href="../contact/">Contact</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../sms-terms/">SMS Terms</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <h1>Contact Us</h1>
+  <p>Fill out the form below and a member of our team will respond within one business day.
+  All fields marked with an asterisk (*) are required.</p>
+
+  <form action="https://formsubmit.co/al_style@live.com" method="POST">
+    <input type="hidden" name="_next" value="https://v0ltfault.github.io/kingpinlabs/thanks/">
+    <input type="hidden" name="_subject" value="New contact form submission from kingpinlabs.com">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="text" name="_honey" style="display:none">
+
+    <label for="name">Full name *</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email address *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Mobile phone number (optional, required only if you want SMS follow-up)</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 555-5555">
+
+    <label for="message">How can we help? *</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <div class="consent">
+      <input type="checkbox" id="sms_consent" name="sms_consent" value="yes">
+      <label for="sms_consent">
+        I agree to receive SMS messages from Kingpin Labs at the phone number I provided.
+        Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe
+        or HELP for assistance.
+      </label>
+    </div>
+
+    <p class="consent-links">
+      By submitting this form you agree to our
+      <a href="../privacy/">Privacy Policy</a> and
+      <a href="../sms-terms/">SMS Terms</a>.
+      Consent to receive SMS is not a condition of service and is never shared, sold, or
+      transferred to third parties.
+    </p>
+
+    <button type="submit">Send message</button>
+  </form>
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Kingpin Labs &middot; Orlando, FL &middot; <a href="../privacy/">Privacy</a> &middot; <a href="../sms-terms/">SMS Terms</a></p>
+  </div>
+</footer>
+</body>
+</html>
