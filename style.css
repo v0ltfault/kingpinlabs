@@ -141,13 +141,19 @@ header .container {
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
   display: grid;
   place-items: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: 'Space Grotesk', sans-serif;
+  color: transparent;
+  font-size: 0;
   box-shadow: 0 4px 14px rgba(124, 92, 255, 0.4);
   position: relative;
   overflow: hidden;
+}
+
+.logo-mark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/logo.svg') center/66% no-repeat;
+  z-index: 2;
 }
 
 .logo-mark::after {
@@ -155,6 +161,7 @@ header .container {
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent 60%);
+  z-index: 1;
 }
 
 nav {
