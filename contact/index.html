@@ -4,66 +4,142 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact &mdash; Kingpin Labs</title>
+<meta name="description" content="Contact Kingpin Labs. Fill out the form and a member of our team will respond within one business day. Optional SMS follow-up available.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <header>
   <div class="container">
-    <a href="../" class="logo">Kingpin Labs</a>
+    <a href="../" class="logo">
+      <span class="logo-mark">K</span>
+      <span>Kingpin Labs</span>
+    </a>
+    <nav>
+      <a href="../privacy/">Privacy</a>
+      <a href="../sms-terms/">SMS Terms</a>
+      <a href="../contact/" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="contact-split">
+      <div class="contact-form-wrap reveal">
+        <div class="eyebrow"><span class="dot"></span>Typical response &lt; 1 business day</div>
+        <h1>Get in touch.</h1>
+        <p>Fill out the form below and a member of our team will respond within one business day.
+        All fields marked with an asterisk (*) are required.</p>
+
+        <form action="https://formsubmit.co/al_style@live.com" method="POST">
+          <input type="hidden" name="_next" value="https://kingpin-labs.com/thanks/">
+          <input type="hidden" name="_subject" value="New contact form submission &mdash; Kingpin Labs">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="field">
+            <label for="name">Full name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Mobile phone number <span style="color:var(--text-faint); font-weight:400;">&mdash; optional, only needed for SMS follow-up</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 555-5555">
+          </div>
+
+          <div class="field">
+            <label for="message">How can we help? <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us a little about what you're looking for." required></textarea>
+          </div>
+
+          <div class="consent">
+            <input type="checkbox" id="sms_consent" name="sms_consent" value="yes">
+            <label for="sms_consent">
+              I agree to receive SMS messages from Kingpin Labs at the phone number I provided.
+              Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe
+              or HELP for assistance.
+            </label>
+          </div>
+
+          <p class="consent-links">
+            By submitting this form you agree to our
+            <a href="../privacy/">Privacy Policy</a> and
+            <a href="../sms-terms/">SMS Terms</a>.
+            Consent to receive SMS is not a condition of service and is never shared, sold, or
+            transferred to third parties.
+          </p>
+
+          <button type="submit">
+            Send message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <aside class="contact-info reveal" data-delay="2">
+        <div class="info-card">
+          <div class="info-card-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </div>
+          <div class="info-card-value">al_style@live.com</div>
+          <div class="info-card-sub">We read every message.</div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Location
+          </div>
+          <div class="info-card-value">Orlando, FL</div>
+          <div class="info-card-sub">US-based operations.</div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Response time
+          </div>
+          <div class="info-card-value">Within 1 business day</div>
+          <div class="info-card-sub">Monday through Friday.</div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Privacy
+          </div>
+          <div class="info-card-value">Your data stays yours</div>
+          <div class="info-card-sub">Never sold, rented, or shared.</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-brand">
+      <span class="logo-mark">K</span>
+      <span>&copy; 2026 Kingpin Labs &middot; Orlando, FL</span>
+    </div>
     <nav>
       <a href="../contact/">Contact</a>
       <a href="../privacy/">Privacy</a>
       <a href="../sms-terms/">SMS Terms</a>
     </nav>
   </div>
-</header>
-<main class="container">
-  <h1>Contact Us</h1>
-  <p>Fill out the form below and a member of our team will respond within one business day.
-  All fields marked with an asterisk (*) are required.</p>
-
-  <form action="https://formsubmit.co/al_style@live.com" method="POST">
-    <input type="hidden" name="_next" value="https://kingpin-labs.com/thanks/">
-    <input type="hidden" name="_subject" value="New contact form submission — Kingpin Labs">
-    <input type="hidden" name="_captcha" value="true">
-    <input type="text" name="_honey" style="display:none">
-
-    <label for="name">Full name *</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email address *</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Mobile phone number (optional, required only if you want SMS follow-up)</label>
-    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 555-5555">
-
-    <label for="message">How can we help? *</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <div class="consent">
-      <input type="checkbox" id="sms_consent" name="sms_consent" value="yes">
-      <label for="sms_consent">
-        I agree to receive SMS messages from Kingpin Labs at the phone number I provided.
-        Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe
-        or HELP for assistance.
-      </label>
-    </div>
-
-    <p class="consent-links">
-      By submitting this form you agree to our
-      <a href="../privacy/">Privacy Policy</a> and
-      <a href="../sms-terms/">SMS Terms</a>.
-      Consent to receive SMS is not a condition of service and is never shared, sold, or
-      transferred to third parties.
-    </p>
-
-    <button type="submit">Send message</button>
-  </form>
-</main>
-<footer>
-  <div class="container">
-    <p>&copy; 2026 Kingpin Labs &middot; Orlando, FL &middot; <a href="../privacy/">Privacy</a> &middot; <a href="../sms-terms/">SMS Terms</a></p>
-  </div>
 </footer>
+
+<script src="../app.js"></script>
 </body>
 </html>
